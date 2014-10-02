@@ -7,9 +7,6 @@
 	"storage",
 	"https://github.com/*"
     ],
-    "page_action": {
-	"default_icon": "assets/icon.png",
-	"default_popup": "settings.html"
-    },
+
     "options_page": "options.html"
 }
