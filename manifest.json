@@ -1,16 +1,15 @@
 {
-  "manifest_version": 2,
-
-  "name": "medusa",
-  "description": "This extension allows treating multiple branches in github as a main one",
-  "version": "1.0",
-
-  "permissions": [
-    "https://github.com/"
-  ],
-
-  "browser_action": {
-    "default_icon": "assets/medusa.jpg",
-    "default_popup": "settings.html"
-  }
+    "manifest_version": 2,
+    "name": "medusa",
+    "description": "This extension allows treating multiple branches in github as a main one",
+    "version": "1.0",
+    "permissions": [
+	"storage",
+	"https://github.com/*"
+    ],
+    "page_action": {
+	"default_icon": "assets/icon.png",
+	"default_popup": "settings.html"
+    },
+    "options_page": "options.html"
 }
