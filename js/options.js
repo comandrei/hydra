@@ -45,6 +45,15 @@
 	    $branchList.html(template(items));
 	});
     }
+
+    function addAnother(){
+	$branchList.append(template(empty));
+    }
+
     document.addEventListener('DOMContentLoaded', restoreOptions);
+
+    $("#addAnother").on('click', addAnother);
+
     $("#save").on('click', saveOptions);
+
 }(jQuery, Handlebars));
