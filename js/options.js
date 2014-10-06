@@ -8,8 +8,25 @@
         empty = { branches: [{target:"", pattern: ""}] };
 
     function saveOptions() {
-	var branches = empty;
-	chrome.storage.sync.set(branches, function() {
+	var options,
+	    branches = [];
+
+	$("#branchList li").each(function(){
+	    var $this = $(this),
+	        targetVal = $this.find("input[name='target']").val(),
+	        patternVal = $this.find("input[name='pattern']").val();
+	    branches.push({target: targetVal, pattern: patternVal});
+	});
+
+
+	if (branches.length === 0){
+	    options = empty;
+	}
+	else {
+	    options = {'branches': branches};
+	}
+
+	chrome.storage.sync.set(options, function() {
 	    $status.html('Options saved');
 	    setTimeout(function() {
 		$status.empty();
