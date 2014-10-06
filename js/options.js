@@ -1,10 +1,11 @@
 /*global jQuery, Handlebars */
 
 (function ($, hbs) {
+
     var $status = $("#status"),
         $branchList = $("#branchList"),
         template = hbs.templates['option.hbs'],
-        empty = { branches: [{target:"", pattern: ""}]};
+        empty = { branches: [{target:"", pattern: ""}] };
 
     function saveOptions() {
 	var branches = empty;
