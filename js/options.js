@@ -34,11 +34,14 @@
 	});
     }
 
-    // Restores select box and checkbox state using the preferences
-    // stored in chrome.storage.
     function restoreOptions() {
-	// Use default value color = 'red' and likesColor = true.
+
 	chrome.storage.sync.get(empty, function(items) {
+	    // Use a default
+
+	    if (items.branches.length === 0) {
+		items = empty;
+	    }
 	    $branchList.html(template(items));
 	});
     }
