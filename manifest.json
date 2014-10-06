@@ -7,6 +7,9 @@
 	"storage",
 	"https://github.com/*"
     ],
-
+    "content_scripts": [{
+	"matches": ["https://github.com/*"],
+	"js": ["js/contentscript.js"]
+    }],
     "options_page": "options.html"
 }
