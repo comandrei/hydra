@@ -2,6 +2,8 @@
     "manifest_version": 2,
     "name": "medusa",
     "description": "This extension allows treating multiple branches in github as a main one",
+    "author": "Andrei Coman",
+    "homepage_url": "https://github.com/comandrei/medusa",
     "version": "0.0.1",
     "permissions": [
 	"storage",
