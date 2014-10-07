@@ -1,6 +1,7 @@
 medusa
 =====
 [![Build Status](https://travis-ci.org/comandrei/medusa.png)](https://travis-ci.org/comandrei/medusa)
+[![devDependency Status](https://david-dm.org/comandrei/medusa/dev-status.svg)](https://david-dm.org/comandrei/medusa#info=devDependencies)
 
 Chrome Extension to treat multiple branches as a main one in GitHub
 
