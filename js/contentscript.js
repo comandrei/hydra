@@ -1,7 +1,9 @@
 (function () {
     var empty = { branches: [] };
-    function findPullRequestLinks(){
-	return [];
+
+    function findPullRequestLinks() {
+	var links = document.getElementsByTagName("a");
+	return links;
     }
     function handleBranches(items){
 	console.log(items.branches);
