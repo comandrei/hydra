@@ -11,7 +11,7 @@
     ],
     "content_scripts": [{
 	"matches": ["https://github.com/*"],
-	"js": ["js/contentscript.js"]
+	"js": ["js/vendor/jquery.min.js", "js/contentscript.js"]
     }],
     "options_page": "options.html"
 }
